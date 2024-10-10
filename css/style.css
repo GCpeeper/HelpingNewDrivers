@@ -103,7 +103,7 @@ body {
 }
 
 /* added a container for the main content I can edit this if needed */
-.standard-gird {
+.standard-grid {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-gap: 20px;

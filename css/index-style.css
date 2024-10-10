@@ -1,0 +1,10 @@
+
+.drive-grid {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.drive-grid-img {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+}
