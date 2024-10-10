@@ -4,6 +4,7 @@
  Main Text: #849698
  Accent 1: #FAF0CA
  Accent 2: #F4D35E
+ font sheet: <link rel="stylesheet" href="https://use.typekit.net/ntv2xbq.css">
  */
  
  
@@ -11,7 +12,8 @@
  .navbar {
     overflow: hidden;
     background-color: #8091a0;
-    font-family: Arial;
+    font-family: "sztos-variable", sans-serif;
+    font-variation-settings: "wdth" 200, "wght" 400;
   }
   
   /* Links inside the navbar */
@@ -83,6 +85,8 @@
 
 body {
     background-color: #0D3B66;
+    font-family: "sztos-variable", sans-serif;
+    font-variation-settings: "wdth" 200, "wght" 400;
 }
 
 /* added a footer - can change if needed */
