@@ -5,7 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/ntv2xbq.css">
+    <link rel="stylesheet" href="css/percy.css">
     <title>Car Tour</title>
+    <style>
+      h2 {
+        background-color: #f4d35e;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 0px;
+      }
+
+      p {
+        color: #faf0ca;
+        text-align: left;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #faf0ca;
+        padding: 10px;
+      }
+
+      .coll-p {
+        color: black;
+        text-align: left;
+        border-style: none;
+        padding: 0px;
+      }
+    </style>
 </head>
 <body>
     <div class="navbar">
@@ -38,15 +63,74 @@
             </div>
           </div>
       </div>
-    <h1>Car tour</h1>
-    <h2>YouTube Video about dashboard symbols</h2>
-    <h2>Driver's area / Front of the car</h2>
-    <h2>Passenger area</h2>
-    <h2>Hood</h2>
-    <h2>Trunk</h2>
 
+    <div class="standard-grid">
+      <div class="title" style="background-color: #f4d35e;">
+        <h1>Car tour</h1>
+      </div>
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DswOF-reMRo?si=vcCK8452cUw8J2LU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>   
+      <div class="front">
+        <h2>Front of the Car</h2>
+        <img src="images/Mazda3-1-1544670565.jpg" alt="front of car" width="100%">
+        <p>The front the car is where all drivers will be the most so it is important to be familiar with this area!</p>
+        <p>The most important points of the car here is the wheel, the mirrors, the seat, and of course how to start the car.</p>
+        <p>There is also a compartment in the passenger seat that typically holds your car's manual and is a good place to put other things you want to stay in your car.</p>
+        <button class="collapsible">Wheel</button>
+          <div class="coll-content">
+            <p class="coll-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        <button class="collapsible">Mirrors</button>
+          <div class="coll-content">
+            <p class="coll-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        <button class="collapsible">Seat</button>
+          <div class="coll-content">
+            <p class="coll-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        <p>Starting the car is the easiest to explain out of the others. Depending on your car you'll either have a button or key slot where you have to insert the car key and turn to start.</p>     
+      </div> 
+      <div class="hood">
+        <h2>Hood</h2>
+        <img src="images/hood.jpg" alt="car hood" width="100%">
+        <p>The hood is probably the most complicated part of the car and because of this it would be better to look at more in-depth guides about the parts in the hood and read your own car's manual.</p>
+        <p>A couple good resources to start with is <a style="color: #849698;" href="https://issuu.com/partzroot/docs/beginner_s_guide_to_body_parts_unde/s/103303">this article</a> and <a style="color: #849698;" class="links" href="https://www.youtube.com/watch?v=Yeb7zft_79k">this video</a>.</p>
+      </div>
+      <div class="trunk">
+        <h2>Trunk</h2>
+        <img src="images/trunk.jpg" alt="car trunk" width="100%">
+        <p>The trunk has very little you'll need to understand. It is pretty expected that it is the primary place where you can store things in your car, but a less known fact is that there is typically a compartment under the main floor of the trunk where you can store an extra tire and sometimes a convenient tool or two.</p>
+      </div>
+      <div class="passenger">
+        <h2>Passenger Area</h2>
+        <img src="images/passenger.jpg" alt="passenger seats" width="100%">
+        <p>The passenger area is much less complicated than the driver's seat and even if you drive other people around a lot there isn't much to think about. Two importants things to think about for it may be the back windows and fondable seats.</p>
+        <p>Depending on the size of your car, you may be able to fold down the seats in the back of the car which makes more room for placing large items.</p>
+        <p>The same goes for the back windows, you may be able to open these windows from the driver's seat with the buttons on your door or main middle section.</p>
+      </div> 
+    </div>
+<br>
     <div class="footer">
         Page by Percy
     </div>
+
+    <!--NEW FEATURE-->
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active-coll");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+      </script>
 </body>
 </html>

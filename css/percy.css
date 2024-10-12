@@ -1,0 +1,134 @@
+.title {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+    text-align: center;
+}
+
+.video {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+    text-align: center;
+}
+
+.front {
+    grid-column: 1 / span 1;
+    grid-row: 3;
+    text-align: center;
+}
+
+.hood {
+    grid-column: 2 / span 1;
+    grid-row: 3;
+    text-align: center;
+}
+
+.trunk {
+    grid-column: 3 / span 1;
+    grid-row: 3;
+    text-align: center;
+}
+
+.passenger {
+    grid-column: 4 / span 1;
+    grid-row: 3;
+    text-align: center;
+}
+
+/*NEW FEATURE*/
+.collapsible {
+    background-color: #f4d35e;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-family: "sztos-variable", sans-serif;
+    font-variation-settings: "wdth" 200, "wght" 400;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #0D3B66;
+}
+  
+.active-coll, .collapsible:hover {
+    background-color: #faf0ca;
+}
+  
+.collapsible:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active-coll:after {
+    content: "\2212";
+}
+  
+.coll-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #faf0ca;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #0D3B66;
+}
+
+
+.table-txt {
+    grid-column: 2 / span 1;
+    grid-row: 2;
+}
+
+.table {
+    grid-column: 3 / span 2;
+    grid-row: 2;
+}
+
+.img1 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    text-align: center;
+}
+
+.gas-txt {
+    grid-column: 3 / span 2;
+    grid-row: 3;
+}
+
+.para {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    text-align: center;
+}
+
+.hill {
+    grid-column: 3 / span 2;
+    grid-row: 4;
+    text-align: center;
+}
+
+.perp {
+    grid-column: 1 / span 1;
+    grid-row: 5;
+}
+
+.rev-perp {
+    grid-column: 2 / span 1;
+    grid-row: 5;
+}
+
+.angle {
+    grid-column: 3 / span 1;
+    grid-row: 5;
+}
+
+.rev-angle {
+    grid-column: 4 / span 1;
+    grid-row: 5;
+}
