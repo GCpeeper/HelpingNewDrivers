@@ -105,7 +105,7 @@ body {
 /* added a container for the main content I can edit this if needed */
 .standard-grid {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 24% 24% 24% 24%;
     grid-gap: 20px;
     padding: 20px;
 }
