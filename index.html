@@ -117,6 +117,340 @@
           <div class="when-drive-table">
 
           </div>
+          <div class="table-grid">
+            <!-- New Feature -->
+            <button onclick="toggle(this);">Show table</button>
+            <!-- New Feature -->
+            <script>
+              let toggle = button => {
+                let element = document.getElementById("mytable");
+                let hidden = element.getAttribute("hidden");
+
+                if (hidden) {
+                  element.removeAttribute("hidden");
+                  button.innerText = "Hide table";
+                } else {
+                  element.setAttribute("hidden", "hidden");
+                  button.innerText = "Show table";
+                }
+              }
+            </script>
+            <table hidden class="table-layout" id="mytable">
+              <tr>
+              <th>State</th>
+              <th>Learner's Permit</th>
+              <th>Restricted License</th>
+              <th>Full License</th>
+              </tr>
+              <tr>
+              <td>Alabama</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              </tr>
+              <tr>
+              <td>Alaska</td>
+              <td>14</td>
+              <td>16</td>
+              <td>16, 6 months</td>
+              </tr>
+              <tr>
+              <td>Arizona</td>
+              <td>15, 6 months</td>
+              <td>16</td>
+              <td>16, 6 months</td>
+              </tr>
+              <tr>
+              <td>Arkansas</td>
+              <td>14</td>
+              <td>16</td>
+              <td>18</td>
+              </tr>
+              <tr>
+              <td>California</td>
+              <td>15, 6 months</td>
+              <td>16</td>
+              <td>17</td>
+              </tr>
+              <tr>
+              <td>Colorado</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              </tr>
+              <tr>
+              <td>Connecticut</td>
+              <td>16</td>
+              <td>16, 4 months</td>
+              <td>18</td>
+              </tr>
+              <tr>
+              <td>Delaware</td>
+              <td>16</td>
+              <td>16, 6 months</td>
+              <td>17</td>
+              </tr>
+              <tr>
+              <td>District of Columbia</td>
+              <td>16</td>
+              <td>16, 6 months</td>
+              <td>18</td>
+              </tr>
+              <tr>
+              <td>Florida</td>
+              <td>15</td>
+              <td>16</td>
+              <td>18</td>
+              </tr>
+              <tr>
+              <td>Georgia</td>
+              <td>15</td>
+              <td>16</td>
+              <td>18</td>
+              </tr>
+              <tr>
+              <td>Hawaii</td>
+              <td>15, 6 months</td>
+              <td>16</td>
+              <td>17</td>
+              </tr>
+              <tr>
+              <td>Idaho</td>
+              <td>14, 6 months</td>
+              <td>15</td>
+              <td>16</td>
+              </tr>
+              <tr>
+              <td>Illinois</td>
+              <td>15</td>
+              <td>16</td>
+              <td>18</td>
+              </tr>
+              <tr>
+              <td>Indiana</td>
+              <td>15</td>
+              <td>16, 3 months</td>
+              <td>18</td>
+              </tr>
+              <tr>
+              <td>Iowa</td>
+              <td>14</td>
+              <td>16</td>
+              <td>17</td>
+              </tr>
+              <tr>
+              <td>Kansas</td>
+              <td>14</td>
+              <td>16</td>
+              <td>16, 6 months</td>
+              </tr>
+              <tr>
+              <td>Kentucky</td>
+              <td>16</td>
+              <td>16, 6 months</td>
+              <td>17</td>
+              </tr>
+              <tr>
+              <td>Louisiana</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              </tr>
+              <tr>
+              <td>Maine</td>
+              <td>15</td>
+              <td>16</td>
+              <td>16, 9 months</td>
+              </tr>
+              <tr>
+              <td>Maryland</td>
+              <td>15, 9 months</td>
+              <td>16, 6 months</td>
+              <td>18</td>
+              </tr>
+              <tr>
+              <td>Massachusetts</td>
+              <td>16</td>
+              <td>16, 6 months</td>
+              <td>18</td>
+              </tr>
+              <tr>
+              <td>Michigan</td>
+              <td>14, 9 months</td>
+              <td>16</td>
+              <td>17</td>
+              </tr>
+              <tr>
+              <td>Minnesota</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              </tr>
+              <tr>
+              <td>Mississippi</td>
+              <td>15</td>
+              <td>16</td>
+              <td>18</td>
+              </tr>
+              <tr>
+              <td>Missouri</td>
+              <td>15</td>
+              <td>16</td>
+              <td>18</td>
+              </tr>
+              <tr>
+              <td>Montana</td>
+              <td>14, 6 months</td>
+              <td>15</td>
+              <td>16</td>
+              </tr>
+              <tr>
+              <td>Nebraska</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              </tr>
+              <tr>
+              <td>Nevada</td>
+              <td>15, 6 months</td>
+              <td>16</td>
+              <td>18</td>
+              </tr>
+              <tr>
+              <td>New Hampshire</td>
+              <td>15, 6 months</td>
+              <td>16</td>
+              <td>17, 1 months</td>
+              </tr>
+              <tr>
+              <td>New Jersey</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              </tr>
+              <tr>
+              <td>New Mexico</td>
+              <td>15</td>
+              <td>15, 6 months</td>
+              <td>16, 6 months</td>
+              </tr>
+              <tr>
+              <td>New York</td>
+              <td>16</td>
+              <td>16, 6 months</td>
+              <td>18</td>
+              </tr>
+              <tr>
+              <td>North Carolina</td>
+              <td>15</td>
+              <td>16</td>
+              <td>16, 6 months</td>
+              </tr>
+              <tr>
+              <td>North Dakota</td>
+              <td>14</td>
+              <td>15</td>
+              <td>16</td>
+              </tr>
+              <tr>
+              <td>Ohio</td>
+              <td>15, 6 months</td>
+              <td>16</td>
+              <td>18</td>
+              </tr>
+              <tr>
+              <td>Oklahoma</td>
+              <td>15, 6 months</td>
+              <td>16</td>
+              <td>17</td>
+              </tr>
+              <tr>
+              <td>Oregon</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              </tr>
+              <tr>
+              <td>Pennsylvania</td>
+              <td>16</td>
+              <td>16, 6 months</td>
+              <td>18</td>
+              </tr>
+              <tr>
+              <td>Rhode Island</td>
+              <td>16</td>
+              <td>16, 6 months</td>
+              <td>17, 6 months</td>
+              </tr>
+              <tr>
+              <td>South Carolina</td>
+              <td>15</td>
+              <td>15, 6 months</td>
+              <td>16, 6 months</td>
+              </tr>
+              <tr>
+              <td>South Dakota</td>
+              <td>14</td>
+              <td>14, 6 months</td>
+              <td>16</td>
+              </tr>
+              <tr>
+              <td>Tennessee</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              </tr>
+              <tr>
+              <td>Texas</td>
+              <td>15</td>
+              <td>16</td>
+              <td>18</td>
+              </tr>
+              <tr>
+              <td>Utah</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              </tr>
+              <tr>
+              <td>Vermont</td>
+              <td>15</td>
+              <td>16</td>
+              <td>16, 6 months</td>
+              </tr>
+              <tr>
+              <td>Virginia</td>
+              <td>15, 6 months</td>
+              <td>16</td>
+              <td>18</td>
+              </tr>
+              <tr>
+              <td>Washington</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              </tr>
+              <tr>
+              <td>West Virginia</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              </tr>
+              <tr>
+              <td>Wisconsin</td>
+              <td>15, 6 months</td>
+              <td>16</td>
+              <td>16, 9 months</td>
+              </tr>
+              <tr>
+              <td>Wyoming</td>
+              <td>15</td>
+              <td>16</td>
+              <td>16, 6 months</td>
+              </tr>
+              </table>
+          </div>
+
         
         </div>
 
