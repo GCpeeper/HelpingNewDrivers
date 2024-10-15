@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/xinyuan.css">
     <link rel="stylesheet" href="https://use.typekit.net/ntv2xbq.css">
     <title>Insurance</title>
+    <style>
+      .tc {
+        background-color: #faf0ca;
+      }
+
+      h2 {
+        background-color: #f4d35e;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 0px;
+        text-align: center;
+      }
+
+      p {
+        color: #faf0ca;
+        text-align: left;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #faf0ca;
+        padding: 10px;
+      }
+    </style>
 </head>
 <body>
     <div class="navbar">
@@ -39,12 +62,108 @@
           </div>
       </div> 
 
-      <h1>Insurance</h1>
-      <h2>Liability Insurance</h2>
-      <h2>Personal Injury Protection</h2>
-      <h2>Collision</h2>
-      <h2>Uninsured Motorist Coverage</h2>
-      <h2>Comprehensive Coverage</h2>
+      <div class="standard-grid">
+        <div class="title" style="background-color: #f4d35e;">
+          <h1>Insurance</h1>
+        </div>
+        <div class="insurance-intro">
+          <p>
+            Understanding the different types of car insurance is essential for every driver. 
+            Whether you're looking for basic coverage or more comprehensive protection, 
+            knowing what each type of insurance offers will help you make informed decisions. <br> <br>
+            This guide breaks down the most common types of auto insurance, 
+            including what they cover and whether they're required, 
+            so you can choose the right coverage for your needs and drive with peace of mind.
+          </p>
+        </div>
+        <div class="insurance-image">
+          <img src="images/insurance.jpg" alt="car insurance" width="70%">
+        </div>
+
+        <div class="table">
+          <table class="table-style" cellpadding="10" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Insurance Type</th>
+                <th>Description</th>
+                <th>What It Covers</th>
+                <th>Is It Required?</th>
+                <th>Estimated Pricing (Monthly)</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="tc">
+                  <span class="tooltip">
+                    <a href="https://www.allstate.com/resources/car-insurance/liability-car-insurance-cover" target="_blank">Liability Insurance</a>
+                    <span class="tooltiptext">Website with more details</span>
+                  </span>
+                </td>
+                <td>Covers costs if you are at fault in an accident and cause injury or property damage to others. It's the most basic form of auto insurance.</td>
+                <td>- Bodily injury to other people<br>- Property damage to other vehicles or property</td>
+                <td>Yes, in most states (coverage minimums vary)</td>
+                <td>$50 - $100, depending on coverage limits</td>
+              </tr>
+
+              <tr>
+                <td class="tc">
+                  <span class="tooltip">
+                    <a href="https://www.insurance.wa.gov/personal-injury-protection-pip" target="_blank">Personal Injury Protection (PIP)</a>
+                    <span class="tooltiptext">Website with more details</span>
+                  </span>
+                </td>
+                <td>Covers medical expenses and sometimes lost wages for you and your passengers, regardless of fault in an accident.</td>
+                <td>- Medical bills<br>- Lost wages<br>- Rehabilitation<br>- Sometimes funeral expenses</td>
+                <td>Required in "no-fault" states; optional elsewhere</td>
+                <td>$10 - $50, depending on state and coverage</td>
+              </tr>
+
+              <tr>
+                <td class="tc">
+                  <span class="tooltip">
+                    <a href="https://youtu.be/m3KR6MgfNMI?si=RojkQ2AW8opRVaV9" target="_blank">Collision Insurance</a>
+                    <span class="tooltiptext">Video with more details</span>
+                  </span>
+                </td>
+                <td>Covers damage to your own vehicle resulting from a collision with another vehicle or object, regardless of fault.</td>
+                <td>- Repairs to your car after a collision<br>- Replacement if the car is totaled</td>
+                <td>Optional, but may be required by lenders or leasing companies</td>
+                <td>$30 - $100, depending on vehicle value</td>
+              </tr>
+
+              <tr>
+                <td class="tc">
+                  <span class="tooltip">
+                    <a href="https://www.progressive.com/answers/uninsured-motorist-insurance/" target="_blank">Uninsured Motorist Coverage</a>
+                    <span class="tooltiptext">Website with more details</span>
+                  </span>
+                </td>
+                <td>Protects you if you are hit by a driver who does not have insurance or has insufficient coverage to pay for damages.</td>
+                <td>- Medical expenses<br>- Lost wages<br>- Property damage (in some cases)</td>
+                <td>Required in some states; optional in others</td>
+                <td>$10 - $50, depending on coverage</td>
+              </tr>
+              
+              <tr>
+                <td class="tc">
+                  <span class="tooltip">
+                    <a href="https://www.progressive.com/answers/comprehensive-insurance/" target="_blank">Comprehensive Coverage</a>
+                    <span class="tooltiptext">Website with more details</span>
+                  </span>
+                </td>
+                <td>Covers damage to your car caused by non-collision events like theft, vandalism, natural disasters, or hitting an animal.</td>
+                <td>- Theft<br>- Vandalism<br>- Fire, natural disasters<br>- Damage from falling objects, hitting animals</td>
+                <td>Optional, but may be required by lenders or leasing companies</td>
+                <td>$15 - $50, depending on vehicle value</td>
+              </tr>
+            </tbody>
+            
+          </table>
+        </div>
+      </div>
+      <br>
+      <br>
 
       <div class="footer">
           Page by Xinyuan
