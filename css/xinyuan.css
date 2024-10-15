@@ -130,6 +130,12 @@
     color: black;
 }
 
+.disclaimer {
+    grid-column: 2 / span 2;
+    grid-row: 4;
+    text-align: center;
+}
+
 
 /* NEW FEATURE */
 .tooltip {
