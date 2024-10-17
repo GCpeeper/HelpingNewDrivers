@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/index-style.css">
     <link rel="stylesheet" href="https://use.typekit.net/ntv2xbq.css">
     <title>Home</title>
+    <style>
+    </style>
 </head>
 <body>
     <div class="navbar">
@@ -119,23 +121,24 @@
           </div>
           <div class="table-grid">
             <!-- New Feature -->
-            <button onclick="toggle(this);">Show table</button>
+            <button onclick="toggle(this);" id="button">Show table</button>
             <!-- New Feature -->
             <script>
               let toggle = button => {
-                let element = document.getElementById("mytable");
+                let element = document.getElementById("table");
+                let button_text = document.getElementById("button")
                 let hidden = element.getAttribute("hidden");
 
                 if (hidden) {
                   element.removeAttribute("hidden");
-                  button.innerText = "Hide table";
+                  button_text.innerText = "Hide table";
                 } else {
                   element.setAttribute("hidden", "hidden");
-                  button.innerText = "Show table";
+                  button_text.innerText = "Show table";
                 }
               }
             </script>
-            <table hidden class="table-layout" id="mytable">
+            <table hidden class="table-layout" id="table">
               <tr>
               <th>State</th>
               <th>Learner's Permit</th>
